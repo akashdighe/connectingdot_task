@@ -1,0 +1,22 @@
+.text-container {
+  text-align: center;
+  margin-top: 90px;
+
+}
+
+.home-text {
+  font-family: Montserrat;
+  font-size: 75px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.home-subtext {
+  font-family: Montserrat;
+  font-size: 75px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-weight: 400;
+}
+

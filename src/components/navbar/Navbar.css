@@ -1,0 +1,131 @@
+.navbar-container {
+    width: 100%;
+    padding: 29px 57px;
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+
+.logo-img {
+    width: 110.07px;
+    height: 78px;
+}
+
+
+.container-navitems {
+    display: flex;
+    gap: 45px;
+    /* border: 1px solid green; */
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 4px;
+}
+
+.menu-item {
+    width: 150px;
+    height: 57px;
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid blue; */
+    position: relative;
+    cursor: pointer;
+
+}
+
+.menu-column {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.menu-text {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.menu-icon-container {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.menu-icon-line {
+    width: 18px;
+    height: 3px;
+    position: absolute;
+    background: black;
+}
+
+.menu-icon-line-rotated {
+    width: 18px;
+    height: 3px;
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    transform: rotate(-90deg);
+    transform-origin: 0 0;
+    background: black;
+}
+
+.menu-dot {
+    height: 4px;
+    background: rgba(255, 255, 255, 0);
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.menu-dot-line {
+    width: 4px;
+    height: 3px;
+    background: black;
+}
+
+
+
+
+
+
+.menu-item:hover .menu-dot-line,
+.menu-item:hover .menu-dot-line::before,
+.menu-item:hover .menu-dot-line::after,
+.menu-item:hover .menu-icon-line,
+.menu-item:hover .menu-icon-line-rotated {
+    background-color: rgb(7, 137, 189);
+}
+
+.menu-item:hover .menu-text {
+    color: rgb(7, 137, 189);
+}
+
+.menu-dot-line,
+.menu-dot-line::before,
+.menu-dot-line::after,
+.menu-icon-line,
+.menu-icon-line-rotated {
+    background-color: black;
+    transition: background-color 0.05s ease-in-out, width 0.5s ease-in-out;
+    /* Adjust width transition duration here */
+}
+
+.menu-item:hover .menu-dot-line,
+.menu-item:hover .menu-dot-line::before,
+.menu-item:hover .menu-dot-line::after {
+    width: 149px;
+}

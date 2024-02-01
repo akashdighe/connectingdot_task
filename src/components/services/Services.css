@@ -1,0 +1,211 @@
+/* ServicesPage.css */
+
+.services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+ }
+
+.text-container-service {
+    /* flex: 1; */
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    overflow: hidden;
+    background: linear-gradient(to right, #2893eb -2%, #FFFFFF 80%);
+    border: 2px solid #1068B2;
+
+}
+
+.rounded-image img {
+    width: 100%;
+    height: auto;
+    /* Add this line to set a red border */
+}
+
+.service-text {
+    font-family: Montserrat;
+    font-size: 100px;
+    letter-spacing: 0em;
+    line-height: 90px;
+    font-weight: 700;
+
+
+}
+
+.service-subtext {
+    font-family: Montserrat;
+    font-size: 100px;
+    letter-spacing: 0em;
+    font-weight: 400;
+    line-height: 90px;
+
+}
+
+.subtext-container {
+    text-align: start;
+    width: fit-content;
+    height: fit-content;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    margin-right: 20px;
+
+}
+
+.slider-container {
+    width: 343.01px;
+    height: 120.96px;
+    background-color: #FAD38F;
+    border-radius: 100px 100px 100px 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-services {
+    width: 119.01px;
+    height: 119.96px;
+    z-index: 100;
+}
+
+.slider-text {
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    z-index: 3000;
+
+}
+
+.sub-slider-text {
+    margin-left: 25px;
+}
+
+
+.slider-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: left 0.9s;
+    font-weight: 400;
+}
+
+.slider-container:hover::before {
+    opacity: 1;
+    left: 0;
+}
+
+/* New rule to change text color on hover */
+.slider-container:hover .slider-text {
+    color: white;
+}
+
+
+
+
+.slider-container2 {
+    width: 343.01px;
+    height: 120.96px;
+    background-color: #CEBBAC;
+    border-radius: 100px 100px 100px 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.slider-container2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: left 0.9s;
+    font-weight: 400;
+}
+
+.slider-container2:hover::before {
+    opacity: 1;
+    left: 0;
+}
+
+/* New rule to change text color on hover */
+.slider-container2:hover .slider-text {
+    color: white;
+}
+
+
+.slider-container3 {
+    width: 343.01px;
+    height: 120.96px;
+    background-color: #A19FAD;
+    border-radius: 100px 100px 100px 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.slider-container3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: left 0.9s;
+    font-weight: 400;
+}
+
+.slider-container3:hover::before {
+    opacity: 1;
+    left: 0;
+}
+
+/* New rule to change text color on hover */
+.slider-container3:hover .slider-text {
+    color: white;
+}
+
+
+@media only screen and (max-width: 767px) {
+   .image-container{
+    margin-top: 20px;
+   } 
+}
